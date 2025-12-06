@@ -1,7 +1,7 @@
 import os
 import torch
 from torch import nn
-import pytorch_lightning as pl
+import lightning as pl
 
 from collections import OrderedDict
 from collections.abc import Iterable, Mapping
