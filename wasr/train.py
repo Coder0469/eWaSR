@@ -3,7 +3,7 @@ from PIL import Image
 import torch
 from torch.optim.lr_scheduler import LambdaLR
 import torchvision.transforms.functional as TF
-import pytorch_lightning as pl
+import lightning as pl
 
 from .loss import focal_loss, water_obstacle_separation_loss
 from .metrics import PixelAccuracy, ClassIoU
