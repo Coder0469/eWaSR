@@ -87,7 +87,7 @@ def get_arguments(input_args=None):
 
     return args
 
-def train_wasr(args,trainloader,valloader=None):
+def train_wasr(args,trainloader=None,valloader=None):
     # Use or create random seed
     args.random_seed = pl.seed_everything(args.random_seed)
 
