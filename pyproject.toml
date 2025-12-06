@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ewasr"
+version = "0.1.0"
+description = "eWaSR: embedded-compute-ready maritime obstacle detection network"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Coder0469" }
+]
+
+dependencies = [
+    "torch",
+    "pytorch-lightning",
+    # thêm các package trong requirements.txt nếu có
+]
+
+[tool.setuptools]
+packages = { find = {} }
+
+[tool.setuptools.package-data]
+ewasr = ["*.yaml", "*.json", "*.txt"]
